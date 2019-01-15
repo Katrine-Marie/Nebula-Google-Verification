@@ -19,7 +19,12 @@ if(!defined('ABSPATH')){
 define('nebula_gsearch_DIR', plugin_dir_path(__FILE__));
 $mystart = new MyInit();
 
-// TODO: INCLUDE files and instantiate classes
+// TODO: INCLUDE + instantiate admin class
+
+include_once k2_gsearch_DIR . 'user/user_control.php';
+$mysearch = new google_search();
+
+// TODO: INCLUDE + instantiate class w. welcome screen
 
 class MyInit{
   public function __construct(){
