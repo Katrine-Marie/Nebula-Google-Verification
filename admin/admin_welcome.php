@@ -41,8 +41,22 @@ class admin_welcome {
 
    // The welcome screen
     public static function welcome_content() {
+      ?>
+        <div class="wrap admin-page">
+          <h1 class="title"><?php echo esc_html( get_admin_page_title() ); ?></h1>
+
+            Welcome to the Google Search Plugin.
+            This allows you to add the google search console verification code to your site.
+
+            <hr />
+
+            <p>A link to the plugin's setup page can be found at the bottom of the 'Settings' menu. <br />Go there to enter your verification code, to verify your ownership of the site.</p>
 
 
+          </div>
+        <?php
+        // now page is seen you can delete the transient
+        delete_transient( '_gsearch_welcome' );
     }
 
 
