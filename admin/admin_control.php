@@ -75,7 +75,7 @@ class admin_control {
 		?>
 			<div class="notice notice-warning is-dismissible">
 				<p>
-					You need to enter your Google Search Console value - <a href="/wp-admin/options-general.php?page=gsearch-admin-page">Click here to fix</a>
+					You need to enter your Google Search Console value - <a href="/wp-admin/options-general.php?page=gsearch_admin_page">Click here to fix</a>
 				</p>
 			</div>
 
