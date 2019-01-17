@@ -3,7 +3,7 @@
 * Plugin Name: Nebula Google Verification
 * Plugin URI: http://google.com
 * Description: Verify your site with Google Search Console by inserting the google meta tag into your site's head section.
-* Version: 1.2.0
+* Version: 1.3.0
 * Author: Katrine-Marie Burmeister
 * Author URI: https://fjordstudio.dk
 * License: GPL-2.0+
@@ -19,13 +19,14 @@ if(!defined('ABSPATH')){
 define('nebula_gsearch_DIR', plugin_dir_path(__FILE__));
 $mystart = new MyInit();
 
-// TODO: INCLUDE + instantiate admin class
+include_once nebula_gsearch_DIR . 'admin/admin_control.php';
+$admin_page = new admin_control();
 
-include_once k2_gsearch_DIR . 'user/user_control.php';
+include_once nebula_gsearch_DIR . 'user/user_control.php';
 $mysearch = new google_search();
 
 // Welcome screen
-include_once k2_gsearch_DIR . 'admin/admin_welcome.php';
+include_once nebula_gsearch_DIR . 'admin/admin_welcome.php';
 $welcome_page = new admin_welcome();
 
 class MyInit{
