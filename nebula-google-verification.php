@@ -1,7 +1,7 @@
 <?php
 /**********
 * Plugin Name: Nebula Google Verification
-* Plugin URI: http://google.com
+* Plugin URI: https://github.com/Katrine-Marie/Nebula-Google-Verification
 * Description: Verify your site with Google Search Console by inserting the google meta tag into your site's head section.
 * Version: 1.3.0
 * Author: Katrine-Marie Burmeister
